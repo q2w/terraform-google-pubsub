@@ -95,7 +95,7 @@ spec:
             spec:
               outputExpr: "{ \"name\": service_name, \"service_account\": service_account_id.email }"
           - source:
-              source: github.com/terraform-google-modules/terraform-google-service-accounts//modules/simple-sa
+              source: github.com/q2w/terraform-google-service-accounts//modules/simple-sa
               version: ">= 4.4"
             spec:
               outputExpr: "{ \"name\": account_details.id, \"service_account\": account_details.email }"
@@ -115,7 +115,7 @@ spec:
         defaultValue: []
         connections:
           - source:
-              source: github.com/terraform-google-modules/terraform-google-cloud-storage//modules/simple_bucket
+              source: github.com/q2w/terraform-google-cloud-storage//modules/simple_bucket
               version: ">= 9.0.1"
             spec:
               outputExpr: "{ \"name\": name, \"bucket\": name}"
